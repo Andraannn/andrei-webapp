@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DreiSuchi - Our Works</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/ourworks.css') }}">
+</head>
+<body>
+    {% include 'header.html' %}
+    {% block content %}{% endblock %}
+    <h1>Our Works</h1>
+    <p>This is where you can find information about my projects.</p>
+    {% include 'footer.html' %}
+</body>
+</html>

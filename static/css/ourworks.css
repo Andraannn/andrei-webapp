@@ -1,0 +1,143 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/static/img/bg.gif');
+    background-size: cover; /* Cover the entire background */
+    background-repeat: no-repeat; /* Do not repeat the background image */
+    background-attachment: fixed; /* Fixed background image */
+    /* Add any other styles for the body */
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+h1 {
+    color: #333;
+}
+
+p {
+    color: #666;
+}
+
+a {
+    text-decoration: none;
+    color: #007bff;
+    margin-right: 10px;
+}
+
+/* Add your CSS styles here */
+header {
+    padding: 20px 0;
+    transition: 0.3s ease; /* Transition for smooth color change */
+    font-family: 'Arial Black', sans-serif;
+    background-color: transparent;
+}
+
+/* Apply transition for smoother hover effect */
+header:hover {
+    background-color: rgba(51, 51, 51, 0.7); /* Transparent color on hover */
+}
+
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 20px;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+    position: relative;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease; /* Transition for smooth color change */
+}
+
+nav ul li a::before {
+    content: ''; /* Required for pseudo-element */
+    position: absolute;
+    bottom: -40px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #ffc107; /* Color of the line (default is ffc107) */
+    transition: width 0.3s ease; /* Transition for smooth width change */
+}
+
+nav ul li a:hover::before {
+    width: 100%; /* Width of the line on hover */
+}
+
+/* Add your CSS styles here */
+footer {
+    position: fixed; /* Fix the footer position */
+    bottom: 0; /* Align the footer to the bottom of the viewport */
+    width: 100%; /* Make the footer span the entire width of the viewport */
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer p {
+    margin: 0; /* Remove default margin for the paragraph */
+}
+
+/* background */
+#header {
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+    background-image: url(images/bg2.gif);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: black; /* You can adjust the color to your preferred darkness */
+    opacity: 0.5; /* You can adjust the opacity to control the darkness */
+}
+
+#header h1 {
+    position: relative;
+    z-index: 1; /* Ensures the text is on top of the background */
+}
+
+/* text effects */
+.role_effect {
+    position: relative;
+    color: #ffc107; /* For example, change the text color to blue */
+    font-weight: bold;
+    /* Add any other styles you want */
+}
+.header-text {
+    margin-top: 5%;
+    margin-left: 50px;
+    font-size: 30px;
+}
+.header-text h1 {
+    font-size: 80px;
+    margin-top: 20px;
+    color: #FDBE02;
+    -webkit-text-stroke: 3px #987301;
+}
+.text1 {
+    position: relative;
+    color: #FFFFFF;
+  }
