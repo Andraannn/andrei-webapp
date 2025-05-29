@@ -11,9 +11,9 @@ def index():
 def about():
     return render_template('about.html')
 
-@app.route('/ourworks')
+@app.route('/myworks')
 def projects():
-    return render_template('ourworks.html')
+    return render_template('myworks.html')
 
 if __name__ == '__main__':
     app.run(debug=True)

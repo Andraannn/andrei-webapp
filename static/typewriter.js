@@ -1,4 +1,4 @@
-const textArray = ["Custom Emotes", "Illustrations", "Twitch Panels","PNGTuber Models","Sub Badges"];
+const textArray = ["Graphic Designer", "Photo Editor", "Web Developer", "Video Editor"];
 let index = 0;
 let currentText = "";
 let letterIndex = 0;
