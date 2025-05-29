@@ -2,11 +2,10 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/static/img/bg.gif');
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/static/img/bg3.gif');
     background-size: cover; /* Cover the entire background */
     background-repeat: no-repeat; /* Do not repeat the background image */
     background-attachment: fixed; /* Fixed background image */
-    /* Add any other styles for the body */
 }
 
 .container {
@@ -38,8 +37,11 @@ header {
 }
 
 /* Apply transition for smoother hover effect */
+header:hover nav ul li a {
+    color: #000000;
+}
 header:hover {
-    background-color: rgba(51, 51, 51, 0.7); /* Transparent color on hover */
+    background-color: rgba(255, 255, 255, 0.7);
 }
 
 nav ul {
@@ -55,7 +57,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
+    color: rgb(96, 160, 255);
     text-decoration: none;
     transition: color 0.3s ease; /* Transition for smooth color change */
 }
@@ -67,7 +69,7 @@ nav ul li a::before {
     left: 0;
     width: 0;
     height: 2px;
-    background-color: #ffc107; /* Color of the line (default is ffc107) */
+    background-color: #132666;
     transition: width 0.3s ease; /* Transition for smooth width change */
 }
 
@@ -80,7 +82,7 @@ footer {
     position: fixed; /* Fix the footer position */
     bottom: 0; /* Align the footer to the bottom of the viewport */
     width: 100%; /* Make the footer span the entire width of the viewport */
-    background-color: #333;
+    background-color: #0c2244;
     color: white;
     text-align: center;
     padding: 10px 0;
@@ -98,7 +100,7 @@ footer p {
 /* text effects */
 .role_effect {
     position: relative;
-    color: #ffc107; /* For example, change the text color to blue */
+    color: rgb(96, 160, 255);
     font-weight: bold;
     /* Add any other styles you want */
 }
@@ -108,10 +110,21 @@ footer p {
     font-size: 30px;
 }
 .header-text h1 {
-    font-size: 80px;
+    font-size: 115px;
     margin-top: 20px;
-    color: #FDBE02;
-    -webkit-text-stroke: 3px #987301;
+    font-family: 'League Gothic', Arial, sans-serif;
+    color: rgb(255, 255, 255);
+}
+.header-text h1 .header-name {
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    text-shadow: none;
+    background: linear-gradient(180deg, #2116bd, #5dabca);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
 }
 .text1 {
     position: relative;
