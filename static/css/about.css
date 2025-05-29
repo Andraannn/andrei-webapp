@@ -15,10 +15,6 @@ body {
     padding: 20px;
 }
 
-h1 {
-    color: #333;
-}
-
 p {
     color: #666;
 }
@@ -121,25 +117,17 @@ footer p {
     z-index: 1; /* Ensures the text is on top of the background */
 }
 
-/* text effects */
-.role_effect {
-    position: relative;
-    color: #ffc107; /* For example, change the text color to blue */
-    font-weight: bold;
-    /* Add any other styles you want */
-}
-.header-text {
-    margin-top: 5%;
-    margin-left: 50px;
-    font-size: 30px;
-}
-.header-text h1 {
-    font-size: 80px;
-    margin-top: 20px;
-    color: #FDBE02;
-    -webkit-text-stroke: 3px #987301;
-}
 .text1 {
-    position: relative;
-    color: #FFFFFF;
-  }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    font-family: 'League Gothic', Arial, sans-serif;
+    font-size: 80px;
+    background: linear-gradient(180deg, #2116bd, #5dabca);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}

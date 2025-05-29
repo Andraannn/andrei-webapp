@@ -140,6 +140,16 @@ footer p {
     -webkit-text-stroke: 3px #987301;
 }
 .text1 {
-    position: relative;
-    color: #FFFFFF;
-  }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    font-family: 'League Gothic', Arial, sans-serif;
+    font-size: 80px;
+    background: linear-gradient(180deg, #2116bd, #5dabca);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
