@@ -11,7 +11,190 @@
     {% include 'header.html' %}
     {% block content %}{% endblock %}
     <h1 class="text1">ABOUT ME</h1>
-    <p>This is where you can learn about me and my background.</p>
+    <p class="intro-text">
+        I am a graduate of Bachelor of Science in Information Technology major in Database Systems (Cum Laude) from Mindanao State University - Iligan Institute of Technology. With a strong foundation in both theoretical and practical aspects of computing, I am passionate about leveraging technology to create innovative and efficient web solutions. My academic journey has equipped me with comprehensive knowledge in web development, database management, and user interface design. As an aspiring Fullstack Web Developer, I am committed to continuous learning and professional growth, aiming to contribute meaningfully to the field of web development through dedication, creativity, and a strong work ethic.
+    </p>
+    <div class="about-container">
+        <div class="about-left">
+            <img src="{{ url_for('static', filename='img/andrei.jpg') }}" alt="My Photo" class="profile-pic">
+            <div class="social-icons">
+            <a href="https://www.facebook.com/anduweeyyy" target="_blank" title="Facebook">
+                <img src="{{ url_for('static', filename='img/icons/facebook.svg') }}" alt="Facebook" class="icon">
+            </a>
+            <a href="https://github.com/Andraannn/" target="_blank" title="GitHub">
+                <img src="{{ url_for('static', filename='img/skills/github.png') }}" alt="GitHub" class="icon">
+            </a>
+            <a href="https://www.linkedin.com/in/andrei-gabrielle-adlawan-237b55299/" target="_blank" title="LinkedIn">
+                <img src="{{ url_for('static', filename='img/icons/linkedin.svg') }}" alt="LinkedIn" class="icon">
+            </a>
+            <a href="https://www.instagram.com/iamboksss/" target="_blank" title="Instagram">
+                <img src="{{ url_for('static', filename='img/icons/instagram.svg') }}" alt="Instagram" class="icon">
+            </a>
+            </div>
+        </div>
+        <style>
+
+        </style>
+        <div class="about-right">
+            <div class="tabs">
+                <button class="tab-link active" onclick="openTab(event, 'skills')">Skills</button>
+                <button class="tab-link" onclick="openTab(event, 'experience')">Experience</button>
+                <button class="tab-link" onclick="openTab(event, 'education')">Education</button>
+                <button class="tab-link" onclick="openTab(event, 'certifications')">Certifications</button>
+            </div>
+            <div id="skills" class="tab-content" style="display:block;">
+                <h2 class="text2">WEB DEVELOPMENT TOOLS</h2>
+                <div class="skills-icons">
+                    <div class="skill-box" title="HTML5">
+                        <img src="{{ url_for('static', filename='img/skills/HTML5.svg') }}" alt="HTML">
+                        <span>HTML5</span>
+                    </div>
+                    <div class="skill-box" title="CSS3">
+                        <img src="{{ url_for('static', filename='img/skills/CSS3.png') }}" alt="CSS">
+                        <span>CSS3</span>
+                    </div>
+                    <div class="skill-box" title="Bootstrap">
+                        <img src="{{ url_for('static', filename='img/skills/bootstrap-logo.svg') }}" alt="Bootstrap">
+                        <span>BOOTSTRAP</span>
+                    </div>
+                    <div class="skill-box" title="TailwindCSS">
+                        <img src="{{ url_for('static', filename='img/skills/tailwind.png') }}" alt="TailwindCSS">
+                        <span>TailwindCSS</span>
+                    </div>
+                    <div class="skill-box" title="JavaScript">
+                        <img src="{{ url_for('static', filename='img/skills/Javascript.png') }}" alt="JavaScript">
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="skill-box" title="Python">
+                        <img src="{{ url_for('static', filename='img/skills/Python.png') }}" alt="Python">
+                        <span>Python</span>
+                    </div>
+                    <div class="skill-box" title="Flask">
+                        <img src="{{ url_for('static', filename='img/skills/Flask.png') }}" alt="Flask">
+                        <span>Flask</span>
+                    </div>
+                    <div class="skill-box" title="React JS">
+                        <img src="{{ url_for('static', filename='img/skills/React.svg') }}" alt="React JS">
+                        <span>React JS</span>
+                    </div>
+                    <div class="skill-box" title="Blazor">
+                        <img src="{{ url_for('static', filename='img/skills/blazor.svg') }}" alt="Blazor">
+                        <span>Blazor</span>
+                    </div>
+                    <div class="skill-box" title="MySQL">
+                        <img src="{{ url_for('static', filename='img/skills/mysql.svg') }}" alt="MySQL">
+                        <span>MySQL</span>
+                    </div>
+                    <div class="skill-box" title="PostgreSQL">
+                        <img src="{{ url_for('static', filename='img/skills/postgresql.svg') }}" alt="PostgreSQL">
+                        <span>PostgreSQL</span>
+                    </div>
+                    <div class="skill-box" title="Git">
+                        <img src="{{ url_for('static', filename='img/skills/git.svg') }}" alt="Git">
+                        <span>Git</span>
+                    </div>
+                    <div class="skill-box" title="GitHub">
+                        <img src="{{ url_for('static', filename='img/skills/github.png') }}" alt="GitHub">
+                        <span>GitHub</span>
+                    </div>
+                    <div class="skill-box" title="WordPress">
+                        <img src="{{ url_for('static', filename='img/skills/wordpress.svg') }}" alt="WordPress">
+                        <span>WordPress</span>
+                    </div>
+                </div>
+                <h2 class="text2">CREATIVE SOFTWARES</h2>
+                <div class="skills-icons">
+                    <div class="skill-box" title="Photoshop">
+                        <img src="{{ url_for('static', filename='img/skills/photoshop.png') }}" alt="Photoshop">
+                        <span>Photoshop</span>
+                    </div>
+                    <div class="skill-box" title="Canva">
+                        <img src="{{ url_for('static', filename='img/skills/canva.png') }}" alt="Canva">
+                        <span>Canva</span>
+                    </div>
+                    <div class="skill-box" title="Vegas Pro">
+                        <img src="{{ url_for('static', filename='img/skills/vegas.svg') }}" alt="Vegas Pro">
+                        <span>Vegas Pro</span>
+                    </div>
+                    <div class="skill-box" title="Blender">
+                        <img src="{{ url_for('static', filename='img/skills/blender.svg') }}" alt="Blender">
+                        <span>Blender</span>
+                    </div>
+                    <div class="skill-box" title="Fusion 360">
+                        <img src="{{ url_for('static', filename='img/skills/fusion360.png') }}" alt="Fusion 360">
+                        <span>Fusion 360</span>
+                    </div>
+                </div>
+            </div>
+            <div id="experience" class="tab-content">
+                <ul>
+                    <li class="experience-item">
+                        <span class="exp-title">Computer Programmer II</span>
+                        <span class="exp-date">AUGUST 2024 – DECEMBER 2024</span>
+                        <span class="exp-org">Mindanao State University - Iligan Institute of Technology, Iligan City</span>
+                    </li>
+                    <li class="experience-item">
+                        <span class="exp-title">Research Assistant</span>
+                        <span class="exp-date">FEBRUARY 2024 – JULY 2024</span>
+                        <span class="exp-org">Mindanao State University - Iligan Institute of Technology, Iligan City</span>
+                    </li>
+                    <li class="experience-item">
+                        <span class="exp-title">FABLAB Mindanao Intern</span>
+                        <span class="exp-date">AUGUST 2018 – AUGUST 2023</span>
+                        <span class="exp-org">Mindanao State University - Iligan Institute of Technology, Iligan City</span>
+                    </li>
+                </ul>
+            </div>
+            <div id="education" class="tab-content">
+                <ul class="education-list">
+                    <li>
+                        <span class="edu-year">2019-2023</span>
+                        <span class="edu-school">Mindanao State University - Iligan Institute of Technology</span>
+                        <span class="edu-degree">Bachelor of Science in Information Technology (Major in Database)</span>
+                        <span class="edu-honors">Latin Honor (Cum Laude)</span>
+                        <span class="edu-honors">Dean's Lister (A.Y. 2021-2023)</span>
+                        <span class="edu-honors">Chancellor's Lister (A.Y. 2020-2021)</span>
+                    </li>
+                    <li>
+                        <span class="edu-year">2017-2019</span>
+                        <span class="edu-school">La Salle Academy Iligan City</span>
+                        <span class="edu-degree">Senior Highschool (STEM Academic Track)</span>
+                        <ul class="awards-list">
+                        </ul>
+                    </li>
+                    <li>
+                        <span class="edu-year">2013-2017</span>
+                        <span class="edu-school">La Salle Academy Iligan City</span>
+                        <span class="edu-degree">Highschool</span>
+                        <ul class="awards-list">
+
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div id="certifications" class="tab-content">
+                <ul>
+                    <li>Dean's Lister for 2 consecutive years from the S.Y. 2021-2022 until S.Y. 2023</li>
+                    <li>Chancellor's Lister in the S.Y. 2020- 2021</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script>
+    function openTab(evt, tabName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tab-content");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tab-link");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].classList.remove("active");
+        }
+        document.getElementById(tabName).style.display = "block";
+        evt.currentTarget.classList.add("active");
+    }
+    </script>
     {% include 'footer.html' %}
 </body>
 </html>

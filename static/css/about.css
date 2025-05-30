@@ -131,3 +131,343 @@ footer p {
     background-clip: text;
     color: transparent;
 }
+
+.text2 {
+    font-family: 'League Gothic', Arial, sans-serif;
+    font-size: 25px;
+    color: #13333f;
+}
+
+.intro-text {
+    font-size: 1.3rem;
+    color: #ffffff;
+    text-align: justify;
+    margin: 15px auto 20px auto;
+    max-width: 700px;
+    line-height: 1.6;
+    font-family: 'Roboto', Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.about-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 60px;
+    margin: 60px auto;
+    max-width: 1100px;
+}
+.about-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 15px;
+}
+.social-icons .icon {
+    filter: brightness(0) invert(1);
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+    display: inline-block;
+}
+.icon {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+    transition: transform 0.2s;
+    display: inline-block;
+}
+.icon:hover {
+    transform: scale(1.1);
+}
+.profile-pic {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 6px 32px rgba(0,0,0,0.18);
+}
+.about-right {
+    flex: 2;
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+    padding: 40px 70px;
+    min-width: 700;
+}
+.tabs {
+    display: flex;
+    gap: 24px;
+    margin-bottom: 32px;
+}
+.tab-link {
+    background: #222;
+    color: #fff;
+    border: none;
+    outline: none;
+    font-size: 1.5rem;
+    font-family: 'League Gothic', Arial, sans-serif;
+    padding: 18px 36px;
+    border-radius: 12px 12px 0 0;
+    cursor: pointer;
+    transition: background 0.2s;
+    letter-spacing: 2px;
+}
+.tab-link.active, .tab-link:hover {
+    background: #0078d7;
+    color: #fff;
+}
+.tab-content {
+    display: none;
+    font-size: 1.2rem;
+    line-height: 2;
+    animation: fadeIn 0.4s;
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+.tab-content ul {
+    list-style: disc inside;
+    margin: 0;
+    padding: 0 0 0 18px;
+}
+
+.experience-item {
+    margin-bottom: 1.2em;
+    padding: 1em;
+    background: #f7f7f7;
+    border-radius: 8px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+    list-style: none;
+}
+.exp-date {
+    display: block;
+    font-size: 0.95em;
+    color: #888;
+    font-weight: 500;
+    margin-bottom: 0.2em;
+}
+.exp-title {
+    display: block;
+    font-size: 1.5em;
+    font-weight: bold;
+    font-family: 'League Gothic', Arial, sans-serif;
+    color: #2a5d9f;
+    margin-bottom: 0.1em;
+}
+.exp-org {
+    display: block;
+    font-size: 0.98em;
+    color: #555;
+}
+#experience ul {
+    padding-left: 0;
+}
+
+.education-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.education-list li {
+    background: #f7f7f7;
+    margin-bottom: 18px;
+    padding: 18px 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+.edu-year {
+    font-weight: bold;
+    color: #2a5d9f;
+    font-size: 1.5em;
+    font-family: 'League Gothic', Arial, sans-serif;
+}
+.edu-school {
+    font-weight: 500;
+    color: #222;
+    font-size: 1.1em;
+}
+.edu-degree {
+    color: #555;
+    font-size: 0.98em;
+}
+@media (max-width: 600px) {
+    .education-list li {
+        padding: 12px 10px;
+    }
+    .edu-school, .edu-degree, .edu-year {
+        font-size: 1em;
+    }
+}
+
+.skills-icons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 20px;
+}
+.skill-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #134ba0;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    padding: 16px 12px;
+    width: 110px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.skill-box:hover {
+    transform: translateY(-6px) scale(1.05);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.13);
+    background: #5299e6;
+}
+.skill-box img {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 10px;
+    object-fit: contain;
+}
+.skill-box span {
+    font-size: 1rem;
+    color: white;
+    font-family: 'League Gothic', Arial, sans-serif;
+    letter-spacing: 0.5px;
+    margin-top: 2px;
+}
+@media (max-width: 700px) {
+    .skills-icons {
+        gap: 14px;
+        justify-content: center;
+    }
+    .skill-box {
+        width: 80px;
+        padding: 10px 4px;
+    }
+    .skill-box img {
+        width: 32px;
+        height: 32px;
+    }
+    .skill-box span {
+        font-size: 0.85rem;
+    }
+}
+
+/* Responsive styles for tablets and smaller devices */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    .about-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+        padding: 0 20px;
+    }
+
+    .about-right {
+        padding: 30px 20px;
+        min-width: auto;
+        width: 100%;
+    }
+
+    .profile-pic {
+        width: 280px;
+        height: 280px;
+    }
+
+    .text1 {
+        font-size: 50px;
+        padding: 0 10px;
+        text-align: center;
+    }
+
+    .text2 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .tabs {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tab-link {
+        font-size: 1.2rem;
+        padding: 12px 24px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .intro-text {
+        padding: 0 15px;
+        font-size: 1.1rem;
+    }
+
+    footer {
+        font-size: 0.9rem;
+        padding: 8px 0;
+    }
+}
+
+/* Responsive styles for mobile devices */
+@media (max-width: 480px) {
+    .profile-pic {
+        width: 220px;
+        height: 220px;
+    }
+
+    .text1 {
+        font-size: 36px;
+    }
+
+    .text2 {
+        font-size: 18px;
+    }
+
+    .about-right {
+        padding: 20px;
+    }
+
+    .tab-link {
+        font-size: 1rem;
+        padding: 10px 16px;
+    }
+
+    .intro-text {
+        font-size: 1rem;
+    }
+
+    .skill-box {
+        width: 70px;
+        padding: 8px;
+    }
+
+    .skill-box img {
+        width: 28px;
+        height: 28px;
+    }
+
+    .skill-box span {
+        font-size: 0.75rem;
+    }
+
+    footer p {
+        font-size: 0.8rem;
+    }
+}
