@@ -1,7 +1,7 @@
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0;
+    padding-top: 80px;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/static/img/bg3.gif');
     background-size: cover; /* Cover the entire background */
     background-repeat: no-repeat; /* Do not repeat the background image */
@@ -35,9 +35,13 @@ header {
     transition: 0.3s ease; /* Transition for smooth color change */
     font-family: 'Arial Black', sans-serif;
     background-color: transparent;
+    position: fixed; /* Keep header fixed at the top */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Ensure it stays above other content */
 }
 
-/* Apply transition for smoother hover effect */
 header:hover nav ul li a {
     color: #000000;
 }
