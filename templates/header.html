@@ -1,9 +1,18 @@
 <header>
     <nav>
-        <ul>
+        <button class="menu-toggle" aria-label="Toggle Menu">&#9776;</button>
+        <ul class="nav-list">
             <li><a href="/">HOME</a></li>
             <li><a href="/about">ABOUT ME</a></li>
             <li><a href="/myworks">MY WORKS</a></li>
         </ul>
     </nav>
 </header>
+<script>
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navList = document.querySelector('.nav-list');
+
+    menuToggle.addEventListener('click', () => {
+        navList.classList.toggle('show');
+    });
+</script>

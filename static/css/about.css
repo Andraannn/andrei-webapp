@@ -78,6 +78,60 @@ nav ul li a:hover::before {
     width: 100%; /* Width of the line on hover */
 }
 
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: rgb(96, 160, 255);
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 1100;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    header:hover {
+        background-color: transparent; /* or whatever the default is */
+    }
+
+    header:hover nav ul li a {
+        color: rgb(96, 160, 255); /* default link color */
+    }
+    nav ul {
+        display: none;
+        flex-direction: column;
+        background-color: rgba(255, 255, 255, 0.95);
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        padding: 10px 0;
+    }
+    nav ul li a::before {
+        display: none;
+    }
+    nav ul li a:hover {
+        color: rgb(96, 160, 255); /* Keep it same as normal state */
+    }
+
+    nav ul.show {
+        display: flex;
+    }
+
+    nav ul li {
+        display: block;
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+}
+
 /* Add your CSS styles here */
 footer {
     position: fixed; /* Fix the footer position */
